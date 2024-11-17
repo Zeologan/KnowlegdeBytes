@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const footerBtn = document.querySelector('.footer-btn');
   const targetSection = document.querySelector('.slider-container');
 
-  if (window.innerWidth <= 320) {
+  if (window.innerWidth <= 480) {
       let lastScrollY = window.scrollY;
 
       const observer = new IntersectionObserver((entries) => {
