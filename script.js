@@ -15,7 +15,7 @@ async function fetchVideoUrls() {
     const response = await fetch(url);
     const data = await response.json();
     allUrls = data.values ? data.values.flat() : []; // Flatten the array to get URLs
-    console.log(allUrls)
+    // console.log(allUrls)
     getRandomUrls(); // Call getRandomUrls after the data is fetched
   } catch (error) {
     console.error("Error fetching video URLs:", error);
@@ -34,7 +34,7 @@ function getRandomUrls() {
       selectedUrls.push(allUrls[randomIndex]);
     }
   }
-  console.log("Selected URLs: ", selectedUrls);
+  // console.log("Selected URLs: ", selectedUrls);
   createSlides(); // Call createSlides after selecting URLs
 }
 
@@ -47,6 +47,7 @@ function createSlides() {
     iframe.src = url;
     iframe.classList.add('slide');
     iframe.setAttribute('allow', 'autoplay; encrypted-media');
+    iframe.setAttribute('cookiepolicy', 'none'); // Set cookiepolicy attribute
     iframe.setAttribute('allowfullscreen', true);
     slider.appendChild(iframe);
   });
