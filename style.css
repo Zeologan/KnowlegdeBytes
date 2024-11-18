@@ -358,7 +358,7 @@ header {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 480px) {
 
     .hero-container{
         padding: 70px 0;
