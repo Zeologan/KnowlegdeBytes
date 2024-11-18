@@ -110,7 +110,7 @@ document.body.addEventListener('click', (event) => {
 
 document.addEventListener('DOMContentLoaded', function () {
   const footerBtn = document.querySelector('.footer-btn');
-  const targetSection = document.querySelector('.slider-container');
+  const targetSection = document.querySelector('.guideline-section');
 
   if (window.matchMedia("(max-width: 480px)").matches) {
       let lastScrollY = window.scrollY;
