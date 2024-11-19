@@ -108,6 +108,7 @@ header {
 
 /* Content list  */
 .content-box {
+    flex-basis: 45%;
     border-right: 1px solid #00000010;
     padding-right: 25px;
 }
