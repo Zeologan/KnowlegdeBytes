@@ -22,7 +22,7 @@ async function fetchVideoUrls() {
   }
 }
 
-// Select 3 random URLs from the allUrls array
+// Select 6 random URLs from the allUrls array
 function getRandomUrls() {
   selectedUrls = [];
   const randomIndexes = []; 
