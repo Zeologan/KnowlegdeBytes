@@ -45,7 +45,7 @@ header {
 }
 
 .container {
-    max-width: 1280px; /* or any preferred max width */
+    max-width: 1920px; /* or any preferred max width */
     margin: 0 auto;
 }
 
@@ -91,7 +91,7 @@ header {
 .content {
     padding: 30px 12%;
     width: 100%;
-    max-width: 1280px;
+    max-width: 1920px;
 }
 
 .content-ideas-container {
