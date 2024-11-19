@@ -27,7 +27,7 @@ function getRandomUrls() {
   selectedUrls = [];
   const randomIndexes = []; 
 
-  while (selectedUrls.length < 3 && allUrls.length > 0) {
+  while (selectedUrls.length < 6 && allUrls.length > 0) {
     const randomIndex = Math.floor(Math.random() * allUrls.length);
     if (!randomIndexes.includes(randomIndex)) { //check duplicate short
       randomIndexes.push(randomIndex);
