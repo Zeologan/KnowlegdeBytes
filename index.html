@@ -2,151 +2,174 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Knowlegde Bits</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Knowlegde Bits</title>
 </head>
 
 <body>
-    <!-- Navigation -->
-    <header>
-        <div class="container">
-            <img class="header-img" src="Images/itv-logo-12.svg" alt="logo">
+  <!-- Navigation -->
+  <header>
+    <div class="container">
+      <img class="header-img" src="Images/itv-logo-12.svg" alt="logo">
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero-container">
+      <div class="website-title-div">
+        <h1 class="main-title"><img src="Images/Knowledge.svg" alt=""><span><img src="Images/Bytes.svg" alt=""></span>
+        </h1>
+        <div class="website-title-slogan">Create. Showcase. WIN!</div>
+        <button class="register-button"
+          onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSf0rsViJR63okToSHj_7kEsSL4-wRNVH_60saZQTWy3XOjzjA/viewform?vc=0&c=0&w=1&flr=0';">Click
+          to Register</button>
+      </div>
+      <div class="prize-img-div">
+        <img src="./Images/trophy1.svg" alt="" loading="lazy" class="prize-img">
+      </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content">
+      <div class="content-ideas-container">
+
+        <div class="content-box">
+          <h1>Content Ideas</h1>
+          <div class="content-list">
+            <h2><img src="icon/star.svg" /> Educational Tutorials / Projects / Case studies</h2>
+            <ul>
+              <li>Software Development</li>
+              <li>Data Science and Analytics</li>
+              <li>AI and Machine Learning</li>
+              <li>Digital Marketing</li>
+            </ul>
+          </div>
+
+          <div class="content-list">
+            <h2><img src="icon/star.svg" alt="">Campus Experiences</h2>
+            <ul>
+              <li>Student Life at I.T.VEDANT branch</li>
+            </ul>
+          </div>
+          <div class="content-list">
+            <h2><img src="icon/star.svg" alt="">Student Stories</h2>
+            <ul>
+              <li>Your experience at I.T.VEDANT</li>
+            </ul>
+          </div>
         </div>
-    </header>
 
-    <!-- Main Content -->
-    <main class="container">
-        <!-- Hero Section -->
-        <section class="hero-container">
-            <div class="website-title-div">
-                <h1 class="main-title"><img src="Images/Knowledge.svg" alt=""><span><img src="Images/Bytes.svg" alt=""></span></h1>
-                <div class="website-title-slogan">Create. Showcase. WIN!</div>
-                <button class="register-button" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSf0rsViJR63okToSHj_7kEsSL4-wRNVH_60saZQTWy3XOjzjA/viewform?vc=0&c=0&w=1&flr=0';">Click to Register</button>
-            </div>
-            <div class="prize-img-div">
-                <img src="./Images/trophy1.svg" alt="" loading="lazy" class="prize-img">
-            </div>
-        </section>
+        <!-- video  -->
+        <div class="creators">
+          <h1>Video Entries from other Creators</h1>
+          <div class="slider-container">
+            <button class="prev" onclick="changeSlide(-1)"><i class="fa-solid fa-angle-left"></i></button>
+            <!-- slide  -->
+            <div class="slider"> </div>
 
-        <!-- Content Section -->
-        <section class="content">
-            <div class="content-ideas-container">
+            <button class="next" onclick="changeSlide(1)"><i class="fa-solid fa-angle-right"></i></button>
+          </div>
+        </div>
 
-                <div class="content-box">
-                    <h1>Content Ideas</h1>
-                    <div class="content-list">
-                        <h2><img src="icon/star.svg" /> Educational Tutorials / Projects / Case studies</h2>
-                        <ul>
-                            <li>Software Development</li>
-                            <li>Data Science and Analytics</li>
-                            <li>AI and Machine Learning</li>
-                            <li>Digital Marketing</li>
-                        </ul>
-                    </div>
+      </div>
+    </section>
 
-                    <div class="content-list">
-                        <h2><img src="icon/star.svg" alt="">Campus Experiences</h2>
-                        <ul>
-                            <li>Student Life at I.T.VEDANT branch</li>
-                        </ul>
-                    </div>
-                    <div class="content-list">
-                        <h2><img src="icon/star.svg" alt="">Student Stories</h2>
-                        <ul>
-                            <li>Your experience at I.T.VEDANT</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- video  -->
-                <div class="creators">
-                    <h1>Video Entries from other Creators</h1>
-                    <div class="slider-container">
-                        <button class="prev" onclick="changeSlide(-1)"><i class="fa-solid fa-angle-left"></i></button>
-                        <!-- slide  -->
-                        <div class="slider"> </div>
-                        
-                        <button class="next" onclick="changeSlide(1)"><i class="fa-solid fa-angle-right"></i></button>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Register Section -->
-        <section class="register-section">
-            <h1>Submit your entries today to boost your chances of winning!</h1>
-            <button class="register-btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSf0rsViJR63okToSHj_7kEsSL4-wRNVH_60saZQTWy3XOjzjA/viewform?vc=0&c=0&w=1&flr=0';">Click to Register</button>
-            <img src="icon/Union.svg" class="Union1" alt="1">
-            <img src="icon/Union.svg" class="Union2" alt="1">
-        </section>
+    <!-- Register Section -->
+    <section class="register-section">
+      <h1>Submit your entries today to boost your chances of winning!</h1>
+      <button class="register-btn"
+        onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSf0rsViJR63okToSHj_7kEsSL4-wRNVH_60saZQTWy3XOjzjA/viewform?vc=0&c=0&w=1&flr=0';">Click
+        to Register</button>
+      <img src="icon/Union.svg" class="Union1" alt="1">
+      <img src="icon/Union.svg" class="Union2" alt="1">
+    </section>
 
 
-        <!-- Guideline Section -->
-        <section class="guideline-section">
-            <div class="guidelines-container">  
-                <h1>Guidelines for the Competition</h1>
-           
-               <div class="guidelines">
-                   <h2> <img src="icon/lineicons_eye.svg"/> Video Format and Length</h2>
-                 <ul>
-                   <li>Length: The video must be of at least 3 minutes</li>
-                   <li>Format: HD quality (1080p preferred)</li>
-                 </ul>
-               </div>
-           
-               <div class="guidelines">
-                 <h2> <img src="icon/lineicons_eye.svg"/> Posting and Submission</h2>
-                 <ul>
-                   <li>Location: The video must be recorded at I.T.VEDANT branch premises only</li>
-                   <li>Upload: Post your video on YouTube</li>
-                   <li>Title: Include I.T.VEDANT name at the end of the title and tag Itvedant (Handle Name: @itvedanteducation). Not using this will lead to disqualification from entry</li>
-                   <li>Hashtags: It is mandatory to include the following hashtags in the description of the video. Not using these hashtags will lead to disqualification from entry:
-                     <ol type="a">
-                       <li>#itvedant</li>
-                       <li>#knowledgebytes</li>
-                       <li>#itvedantlearning</li>
-                       <li>#decodeyourdreams</li>
-                       <li>#itvedantcampus</li>
-                     </ol>
-                   </li>
-                   <li>Privacy Settings: Make sure your video is public</li>
-                   <li>Submission Link: Submit your video link in the registration form shared with you</li>
-                 </ul>
-               </div>
-           
-               <div class="guidelines">
-                 <h2> <img src="icon/lineicons_eye.svg"/> Team Submission Guidelines</h2>
-                 <ul>
-                   <li>The team size can be up to 5 people</li>
-                   <li>Only the Team Captain should fill out the entry form and submission of multiple entries of the same video will not be accepted</li>
-                   <li>The reward will be given to the Team Captain and it’s the captain's responsibility to share the reward with the team members</li>
-                 </ul>
-               </div>
-           
-               <div class="guidelines">
-                 <h2><img src="icon/lineicons_eye.svg"/> Judging Criteria</h2>
-                 <ul>
-                   <li>The winners will be decided on 2 parameters: Creativity and Engagement</li>
-                 </ul>
-               </div>
-           
-               <div class="guidelines">
-                 <h2> <img src="icon/lineicons_eye.svg"/> Result Announcement</h2>
-                 <ul>
-                   <li>The results will be announced on 30th November 2024</li>
-                 </ul>
-               </div>
-             </div>
-        </section>
+    <!-- Guideline Section -->
+    <section class="guideline-section">
+      <div class="guidelines-container">
+        <h1>Guidelines for the Competition</h1>
 
-        <section class="footer-btn">
-          <button class="register-btn" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSf0rsViJR63okToSHj_7kEsSL4-wRNVH_60saZQTWy3XOjzjA/viewform?vc=0&c=0&w=1&flr=0';">Click to Register</button>
-        </section>
-    </main>
-<script src="script.js"></script>
+        <div class="guidelines">
+          <h2> <img src="icon/lineicons_eye.svg" /> Video Format and Length</h2>
+          <ul>
+            <li>Length: The video must be of at least 3 minutes</li>
+            <li>Format: HD quality (1080p preferred)</li>
+          </ul>
+        </div>
+
+        <div class="guidelines">
+          <h2> <img src="icon/lineicons_eye.svg" /> Posting and Submission</h2>
+          <ul>
+            <li>Location: The video must be recorded at I.T.VEDANT branch premises only</li>
+            <li>Upload: Post your video on YouTube</li>
+            <li>Title: Include I.T.VEDANT name at the end of the title and tag Itvedant (Handle Name:
+              @itvedanteducation). Not using this will lead to disqualification from entry</li>
+            <li>Hashtags: It is mandatory to include the following hashtags in the description of the video. Not using
+              these hashtags will lead to disqualification from entry:
+              <ol type="a">
+                <li>#itvedant</li>
+                <li>#knowledgebytes</li>
+                <li>#itvedantlearning</li>
+                <li>#decodeyourdreams</li>
+                <li>#itvedantcampus</li>
+              </ol>
+            </li>
+            <li>Privacy Settings: Make sure your video is public</li>
+            <li>Submission Link: Submit your video link in the registration form shared with you</li>
+          </ul>
+        </div>
+
+        <div class="guidelines">
+          <h2> <img src="icon/lineicons_eye.svg" /> Team Submission Guidelines</h2>
+          <ul>
+            <li>The team size can be up to 5 people</li>
+            <li>Only the Team Captain should fill out the entry form and submission of multiple entries of the same
+              video will not be accepted</li>
+            <li>The reward will be given to the Team Captain and it’s the captain's responsibility to share the reward
+              with the team members</li>
+          </ul>
+        </div>
+
+        <div class="guidelines">
+          <h2><img src="icon/lineicons_eye.svg" /> Judging Criteria</h2>
+          <ul>
+            <li>The winners will be decided on 2 parameters: Creativity and Engagement</li>
+          </ul>
+        </div>
+
+        <div class="guidelines">
+          <h2> <img src="icon/lineicons_eye.svg" /> Result Announcement</h2>
+          <ul>
+            <li>The results will be announced on 30th November 2024</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero-container">
+      <div class="winner">
+        <img src="Images/winner.svg" alt="">
+        <div class="carousel">
+          <div class="carousel-item"></div>
+          <div class="carousel-item"></div>
+          <div class="carousel-item"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer-btn">
+      <button class="register-btn"
+        onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSf0rsViJR63okToSHj_7kEsSL4-wRNVH_60saZQTWy3XOjzjA/viewform?vc=0&c=0&w=1&flr=0';">Click
+        to Register</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
 </body>
+
 </html>
